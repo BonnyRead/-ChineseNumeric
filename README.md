@@ -25,4 +25,5 @@ unlist(lapply(test,function(x){numberTrans(x)}))
 ``
 
 And the result shows
+
 [1] 10000000    11000       99     1001   132000   130200
