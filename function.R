@@ -18,9 +18,9 @@ numberTrans=function(number){
                 for(i in 2:numLength){
                         if(substr(number,i,i)%in%cN){
                                 num=mgsub(substr(number,i,i), cN, eN) %>% as.numeric
-                                if(substr(number,i+1,i+1)%in%cNm[1:3] & is.null(ans)){
+                                if(substr(number,i+1,i+1)%in%cNm[-7] & is.null(ans)){
                                         ans=num*(mgsub(substr(number,i+1,i+1), cNm, eNm) %>% as.numeric)
-                                }else if(substr(number,i+1,i+1)%in%cNm[1:3] & !is.null(ans)){
+                                }else if(substr(number,i+1,i+1)%in%cNm[-7] & !is.null(ans)){
                                         ans=ans+num*(mgsub(substr(number,i+1,i+1), cNm, eNm) %>% as.numeric)
                                 }else if(substr(number,i+1,i+1)=="" & substr(number,i-1,i-1)=="零"){
                                         ans=ans+num
@@ -37,9 +37,9 @@ numberTrans=function(number){
                 for(i in 1:numLength){
                         if(substr(number,i,i)%in%cN){
                                 num=mgsub(substr(number,i,i), cN, eN) %>% as.numeric
-                                if(substr(number,i+1,i+1)%in%cNm[1:3] & is.null(ans)){
+                                if(substr(number,i+1,i+1)%in%cNm[-7] & is.null(ans)){
                                         ans=num*(mgsub(substr(number,i+1,i+1), cNm, eNm) %>% as.numeric)
-                                }else if(substr(number,i+1,i+1)%in%cNm[1:3] & !is.null(ans)){
+                                }else if(substr(number,i+1,i+1)%in%cNm[-7] & !is.null(ans)){
                                         ans=ans+num*(mgsub(substr(number,i+1,i+1), cNm, eNm) %>% as.numeric)
                                 }else if(substr(number,i+1,i+1)=="" & substr(number,i-1,i-1)=="零"){
                                         ans=ans+num
