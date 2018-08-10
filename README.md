@@ -3,7 +3,7 @@ This an simple function that can transform Chinese character into numeric format
 
 This function is inspired by steve chen,who post his idea in http://steve-chen.tw/?p=999
 
-The function is pretty ease to use.And it is now under constructed. Feel free to summit any bug you find.
+The function is pretty easy to use. But it is now under constructed. Feel free to summit any bug you find.
 
 demo 1
 Transfer only one word.
